@@ -14,20 +14,23 @@ type Personnage = {
 };
 
 const personnages: Personnage[] = [
-  {
-    id: "nox",
-    emoji: "🌒",
-    name: "NOX",
-    subtitle: "L’Ombre Originelle",
-    image: "/personnages/point-interrogation-blanc-fond-noir_494516-2500.png",
+
+{
+    id: "keel",
+    emoji: "🔥",
+    name: "KEEL",
+    subtitle: "L’Anomalie",
+    image: "/personnages/keel.jpg",
     paragraphs: [
-      "Nox n’est pas née comme une entité consciente.",
-      "Elle est une partie de la nuit qui n’a pas été enfermée lors de l’activation de l’artefact.",
-      "Fragmentée et incomplète, elle subsiste à l’écart du Cœur, privée de son rôle originel.",
-      "Depuis, Nox cherche un réceptacle capable de l’accueillir et de lui permettre d’agir de nouveau.",
+      "Keel a grandi comme les autres, dans un monde convaincu que la lumière protège et préserve.",
+      "Pourtant, depuis l’enfance, ses rêves sont différents. Des visions de mort, de silence, de choses que personne d’autre ne semble percevoir.",
+      "Malgré cela, il croit au Cœur. Il veut le protéger, comme tous les habitants.",
+      "C’est cette différence, discrète mais persistante, qui attire l’attention de Nox.",
+      "Peu à peu, sans en avoir conscience, Keel devient lié à ce qu’il pensait devoir défendre contre tout.",
     ],
 
-
+    quote:
+      "« Si la nuit est une sentence… alors pourquoi a-t-elle existé si longtemps ? »",
   },
 
   {
@@ -62,23 +65,23 @@ const personnages: Personnage[] = [
 
     quote: "« Tant que la lumière demeure, le monde survit. »",
   },
+
   {
-    id: "keel",
-    emoji: "🔥",
-    name: "KEEL",
-    subtitle: "L’Anomalie",
-    image: "/personnages/keel.jpg",
+    id: "nox",
+    emoji: "🌒",
+    name: "NOX",
+    subtitle: "L’Ombre Originelle",
+    image: "/personnages/point-interrogation-blanc-fond-noir_494516-2500.png",
     paragraphs: [
-      "Keel a grandi comme les autres, dans un monde convaincu que la lumière protège et préserve.",
-      "Pourtant, depuis l’enfance, ses rêves sont différents. Des visions de mort, de silence, de choses que personne d’autre ne semble percevoir.",
-      "Malgré cela, il croit au Cœur. Il veut le protéger, comme tous les habitants.",
-      "C’est cette différence, discrète mais persistante, qui attire l’attention de Nox.",
-      "Peu à peu, sans en avoir conscience, Keel devient lié à ce qu’il pensait devoir défendre contre tout.",
+      "Nox n’est pas née comme une entité consciente.",
+      "Elle est une partie de la nuit qui n’a pas été enfermée lors de l’activation de l’artefact.",
+      "Fragmentée et incomplète, elle subsiste à l’écart du Cœur, privée de son rôle originel.",
+      "Depuis, Nox cherche un réceptacle capable de l’accueillir et de lui permettre d’agir de nouveau.",
     ],
 
-    quote:
-      "« Si la nuit est une sentence… alors pourquoi a-t-elle existé si longtemps ? »",
+
   },
+  
 ];
 
 export default function Page() {
