@@ -33,7 +33,7 @@ const personnages: Personnage[] = [
     emoji: "👁️",
     name: "ÉON",
     subtitle: "Ancien Porteur de Nox — Gardien du Cœur",
-    image: "public/personnages/Eon.jpg",
+    image: "/personnages/Eon.jpg",
     paragraphs: [
       "Éon fut l’un des derniers porteurs de Nox. Il connaissait la nuit. Il savait ce qu’elle exigeait.",
       "Il comprit que Nox n’apportait pas seulement le repos, mais aussi la disparition irréversible de tout ce qui devait finir.",
@@ -50,7 +50,7 @@ const personnages: Personnage[] = [
     emoji: "🏛️",
     name: "L’ORDRE",
     subtitle: "Les Architectes de l’Aube",
-    image: "public/personnages/ordre.jpg",
+    image: "/personnages/ordre.jpg",
     paragraphs: [
       "L’Ordre n’est pas né de la haine, mais d’une volonté désespérée de préserver l’existence.",
       "Après avoir découvert la vérité sur Nox, ils décidèrent qu’aucune force ne devait plus jamais pouvoir éteindre le monde.",
@@ -64,7 +64,7 @@ const personnages: Personnage[] = [
     emoji: "🔥",
     name: "KEEL",
     subtitle: "L’Anomalie",
-    image: "public/personnages/keel.jpg",
+    image: "/personnages/keel.jpg",
     paragraphs: [
       "Keel n’était destiné à rien. Jusqu’à ce que l’équilibre brisé cherche à se réparer.",
       "À Kryos, Keel n’hérite ni de Nox, ni de la lumière contrôlée de l’Ordre.",
