@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Logo / Titre */}
         <Link href="/" className="flex items-center gap-3 text-white">
           <img
-            src="/logo.png"
+            src="/Logo/logo.png"
             alt="LUMEN : Après la nuit"
             className="h-8 w-auto transition-transform duration-300 hover:scale-105"
           />

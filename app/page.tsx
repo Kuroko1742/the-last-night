@@ -14,7 +14,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl">
         {/* Hero */}
         <img
-         src="/logo.png"
+         src="/Logo/logo.png"
          alt="LUMEN : Après la nuit"
          className="mb-6 mx-auto h-32 w-auto opacity-90 transition-transform duration-500 hover:scale-105"
         />
