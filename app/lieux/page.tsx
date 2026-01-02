@@ -49,11 +49,12 @@ const lieux: Lieu[] = [
     subtitle: "La Forêt qui Observe",
     image: "/lieux/foret.jpg",
     paragraphs: [
-      "Lyrn est une forêt dense et sombre, dont les arbres au feuillage immense masquent presque entièrement le ciel.",
-      "La lumière y est absorbée par la canopée et la brume, plongeant la majorité de la forêt dans une pénombre permanente.",
-      "Seul le chemin principal demeure éclairé, maintenu par de puissantes forces chargées d’en préserver l’accès.",
-      "Au cœur de cette obscurité, Lyrn dissimule Nerha, protégée par la forêt elle-même comme un voile vivant.",
+      "Lyrn est une forêt dense aux arbres au feuillage immense, dont les cimes filtrent et diffusent la lumière.",
+      "La clarté y est omniprésente, douce et constante, donnant l’illusion d’un lieu paisible et préservé.",
+      "Le chemin principal reste parfaitement visible, entretenu et protégé par de puissantes forces chargées d’en garantir l’accès.",
+      "Derrière cette lumière maîtrisée, Lyrn dissimule Nerha, cachée par la forêt elle-même comme un voile vivant.",
     ],
+
 
   },
   {

@@ -19,15 +19,17 @@ const personnages: Personnage[] = [
     emoji: "🌒",
     name: "NOX",
     subtitle: "L’Ombre Originelle",
-    image: "/personnages/ordre.jpg",
+    image: "/personnages/point-interrogation-blanc-fond-noir_494516-2500.png",
     paragraphs: [
-      "Nox n’est ni une entité malveillante, ni un dieu cruel.",
-      "Elle est la loi de la fin. Le repos après l’effort. L’oubli après la mémoire.",
-      "Avant l’Ordre, avant Astrae, Nox était portée par des Veilleurs chargés de maintenir l’équilibre.",
-      "Elle ne détruisait pas le monde. Elle lui permettait de se renouveler.",
-      "Lorsque la vérité sur la nuit fut révélée aux hommes, ils refusèrent de l’accepter.",
+      "Nox n’est pas née comme une entité consciente.",
+      "Elle est une partie de la nuit qui n’a pas été enfermée lors de l’activation de l’artefact.",
+      "Fragmentée et incomplète, elle subsiste à l’écart du Cœur, privée de son rôle originel.",
+      "Depuis, Nox cherche un réceptacle capable de l’accueillir et de lui permettre d’agir de nouveau.",
     ],
+
+
   },
+
   {
     id: "eon",
     emoji: "👁️",
@@ -35,28 +37,29 @@ const personnages: Personnage[] = [
     subtitle: "Ancien Porteur de Nox — Gardien du Cœur",
     image: "/personnages/Eon.jpg",
     paragraphs: [
-      "Éon fut l’un des derniers porteurs de Nox. Il connaissait la nuit. Il savait ce qu’elle exigeait.",
-      "Il comprit que Nox n’apportait pas seulement le repos, mais aussi la disparition irréversible de tout ce qui devait finir.",
-      "Éon vit des mondes s’éteindre sans retour. Des civilisations s’effacer pour toujours.",
-      "Alors Éon fit un choix. Il trahit Nox.",
-      "Convaincu qu’un monde figé dans la lumière valait mieux qu’un monde condamné à disparaître, il rejoignit l’Ordre.",
-      "Pour protéger le Cœur, il abandonna l’Ombre et reçut une lumière altérée, forgée pour contenir et dominer.",
-      "Aujourd’hui, Éon protège le Cœur non par fanatisme, mais par peur de ce que la vérité pourrait coûter au monde.",
+      "Éon fut l’un des porteurs les plus avancés.",
+      "Il atteignit l’artefact, là où aucun autre n’était allé aussi loin.",
+      "Face à la vérité, il hésita. Détruire le Cœur signifiait accepter une fin irréversible.",
+      "Éon choisit la lumière. Il abandonna Nox et rejoignit l’Ordre.",
+      "Depuis, il veille sur l’artefact, non par loyauté aveugle, mais parce qu’il craint ce que la nuit pourrait exiger si elle était libérée.",
     ],
+
     quote: "« La nuit n’est pas une bénédiction. C’est une sentence. »",
   },
   {
-    id: "ordre",
+    id: "Les Gardiens",
     emoji: "🏛️",
-    name: "L’ORDRE",
+    name: "Les Gardiens",
     subtitle: "Les Architectes de l’Aube",
     image: "/personnages/ordre.jpg",
     paragraphs: [
-      "L’Ordre n’est pas né de la haine, mais d’une volonté désespérée de préserver l’existence.",
-      "Après avoir découvert la vérité sur Nox, ils décidèrent qu’aucune force ne devait plus jamais pouvoir éteindre le monde.",
-      "Ils enchaînèrent le Cœur. Ils supprimèrent la nuit. Ils réécrivirent l’histoire.",
-      "Éon devint leur preuve vivante : un ancien porteur de Nox ayant renié l’Ombre.",
+      "Les Gardiens ne sont pas nés ainsi.",
+      "Ils furent choisis par l’Ordre lorsque l’artefact dut fonctionner bien au-delà de ses limites.",
+      "Pour contenir la nuit, le Cœur libère une énergie excessive, impossible à stabiliser sans intermédiaire.",
+      "Certains acceptèrent d’en devenir les réceptacles.",
+      "La lumière les transforma, leur accordant une puissance durable, au prix de ce qu’ils étaient autrefois.",
     ],
+
     quote: "« Tant que la lumière demeure, le monde survit. »",
   },
   {
@@ -66,12 +69,13 @@ const personnages: Personnage[] = [
     subtitle: "L’Anomalie",
     image: "/personnages/keel.jpg",
     paragraphs: [
-      "Keel n’était destiné à rien. Jusqu’à ce que l’équilibre brisé cherche à se réparer.",
-      "À Kryos, Keel n’hérite ni de Nox, ni de la lumière contrôlée de l’Ordre.",
-      "Il reçoit une force instable, née du conflit entre les deux.",
-      "Keel est ce qu’Éon a refusé de devenir : quelqu’un capable de regarder la vérité sans la rejeter.",
-      "Keel n’est pas un sauveur. Il est la question que le monde évite depuis trop longtemps.",
+      "Keel a grandi comme les autres, dans un monde convaincu que la lumière protège et préserve.",
+      "Pourtant, depuis l’enfance, ses rêves sont différents. Des visions de mort, de silence, de choses que personne d’autre ne semble percevoir.",
+      "Malgré cela, il croit au Cœur. Il veut le protéger, comme tous les habitants.",
+      "C’est cette différence, discrète mais persistante, qui attire l’attention de Nox.",
+      "Peu à peu, sans en avoir conscience, Keel devient lié à ce qu’il pensait devoir défendre contre tout.",
     ],
+
     quote:
       "« Si la nuit est une sentence… alors pourquoi a-t-elle existé si longtemps ? »",
   },
