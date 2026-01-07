@@ -28,4 +28,29 @@ body {
   color: #ffffff;
 }
 
+/* === MOBILE ONLY === */
+@media (max-width: 768px) {
+
+  /* Conteneur du hero (logo + titre) */
+  .hero {
+    padding-top: 5rem; /* pousse le contenu sous la navbar */
+    padding-bottom: 3rem;
+  }
+
+  /* Logo du jeu */
+  .hero-logo {
+    width: 120px;        /* réduit le logo */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  /* Titre du jeu */
+  .hero-title {
+    font-size: 2rem;     /* au lieu de 3–4rem desktop */
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+
 }
