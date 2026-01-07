@@ -32,7 +32,7 @@ export default function Cinematique() {
           className="overflow-hidden rounded-3xl border border-white/10 bg-black"
         >
           <video
-            src="/videos/teaser.mp4"
+            src="/videos/Teaser Lumen.mp4"
             controls
             autoPlay={false}
             muted={false}
