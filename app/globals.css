@@ -28,29 +28,46 @@ body {
   color: #ffffff;
 }
 
-/* === MOBILE ONLY === */
+/* =========================
+   FIX MOBILE (ne touche pas au PC)
+   ========================= */
 @media (max-width: 768px) {
 
-  /* Conteneur du hero (logo + titre) */
-  .hero {
-    padding-top: 5rem; /* pousse le contenu sous la navbar */
-    padding-bottom: 3rem;
+  /* Empêche le site de déborder sur les côtés */
+  html, body {
+    overflow-x: hidden;
   }
 
-  /* Logo du jeu */
-  .hero-logo {
-    width: 120px;        /* réduit le logo */
+  /* Donne de l'air sur mobile */
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Logo (évite qu'il soit énorme sur mobile) */
+  img {
+    max-width: 100%;
     height: auto;
-    margin-bottom: 1rem;
   }
 
-  /* Titre du jeu */
-  .hero-title {
-    font-size: 2rem;     /* au lieu de 3–4rem desktop */
+  /* Titres trop grands sur mobile */
+  h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 24px;
     line-height: 1.2;
-    text-align: center;
+  }
+
+  /* Paragraphes lisibles */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
+
 
 
 }

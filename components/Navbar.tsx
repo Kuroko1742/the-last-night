@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const links = [
   { href: "/", label: "Accueil" },
@@ -14,6 +15,12 @@ const links = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
+  // Ferme le menu quand tu changes de page
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur">
@@ -25,14 +32,14 @@ export default function Navbar() {
             alt="LUMEN : Après la nuit"
             className="h-8 w-auto transition-transform duration-300 hover:scale-105"
           />
-          <span className="text-lg font-semibold">
+          {/* Le titre reste sur PC, mais sur mobile on le cache pour gagner de la place */}
+          <span className="hidden md:block text-lg font-semibold">
             LUMEN : Après la nuit
-         </span>
-</Link>
+          </span>
+        </Link>
 
-
-        {/* Navigation */}
-        <div className="flex gap-6 text-sm">
+        {/* DESKTOP (inchangé) */}
+        <div className="hidden md:flex gap-6 text-sm">
           {links.map((link) => {
             const isActive =
               link.href === "/"
@@ -49,7 +56,6 @@ export default function Navbar() {
               >
                 {link.label}
 
-                {/* Indicateur actif */}
                 {isActive && (
                   <motion.span
                     layoutId="navbar-underline"
@@ -60,7 +66,51 @@ export default function Navbar() {
             );
           })}
         </div>
+
+        {/* MOBILE (menu burger) */}
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="md:hidden inline-flex items-center justify-center rounded-lg border border-white/10 px-3 py-2 text-white"
+          aria-label="Ouvrir le menu"
+        >
+          {open ? "✕" : "☰"}
+        </button>
       </div>
+
+      {/* Dropdown mobile */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="md:hidden overflow-hidden border-t border-white/10 bg-black/80 backdrop-blur"
+          >
+            <div className="flex flex-col px-6 py-4 gap-3">
+              {links.map((link) => {
+                const isActive =
+                  link.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(link.href);
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`rounded-lg px-3 py-2 transition ${
+                      isActive
+                        ? "bg-white/10 text-white"
+                        : "text-white/80 hover:bg-white/10 hover:text-white"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
