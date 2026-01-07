@@ -20,7 +20,7 @@ export default function Cinematique() {
             Cinématique
           </h1>
           <p className="mt-3 max-w-2xl text-white/70 leading-relaxed">
-            Bande-annonce officielle du jeu.
+            Teaser officielle du jeu.
           </p>
         </motion.header>
 
@@ -43,7 +43,7 @@ export default function Cinematique() {
 
         {/* Caption */}
         <p className="mt-4 text-sm text-white/50">
-          Teaser — contenu en cours de développement.
+          Trailer — contenu en cours de développement.
         </p>
       </section>
     </main>
